@@ -1,11 +1,11 @@
 from gpiozero import Button
 
-button1 = Button(12)
+button1 = Button(pin=12)
 
 
 def button_pressed():
     while True:
-        if (button1 == 0):
+        if button1.is_pressed:
             print('button 1 pressed.')
 
 
