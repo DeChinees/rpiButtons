@@ -1,6 +1,6 @@
-from gpiozero import Button
+from  import Button
 
-button1 = Button(pin=12)
+button1 = Button(18)
 
 
 def button_pressed():
